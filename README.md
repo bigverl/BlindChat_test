@@ -1,3 +1,4 @@
+# NOTE: This is a copy of the BlindChat project. I (bigverl) did not make or contribute to this project. It is merely used to test CI/CD projects I have created.
 # BlindChat
 
 A Facebook messenger bot that allows users to chat with other people on Facebook anonymously.
