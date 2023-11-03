@@ -12,9 +12,7 @@ jobs:
     uses: 'bigverl/workflows/.github/workflows/sonar-scan.yml@main'
     with:
       SONAR_PROJECT_NAME: 'BlindChat'
-      PYTHON_SOURCE_PATH: './'
-      PYTHON_TEST_PATH: './test'
-      SCAN_ROOT: true 
+      PYTHON: true
     secrets:
       SONAR_URL: ${{ secrets.SONAR_URL }}
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
