@@ -89,7 +89,6 @@ def webhook():
             except Exception, e:
                 print("ERROR", str(e))
 
-
             try:
                 if 'postback' in event and 'payload' in event['postback']:
                     postback_payload = event['postback']['payload']
