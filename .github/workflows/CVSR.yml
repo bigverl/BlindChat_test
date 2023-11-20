@@ -1,0 +1,26 @@
+name: Cloud-based Vulnerability Scanning and Reporting Tool (CVSR)
+
+on: 
+#   schedule: 
+#   - cron: '0 0 * * 0'
+  push:
+    branches: [ 'main' ]
+
+jobs:
+  call-mend-scan:
+    name: Call CVSR
+    uses: 'bigverl/workflows/.github/workflows/CVSR_driver.yml@main'
+    with:
+      MEND_PRODUCT_NAME: BlindChat
+      JIRA_PROJECT_NAME: BLD #NOTE: Do not forget to check this against jira.cpsc.com
+    secrets:
+      GHA_PAT: ${{ secrets.GHA_PAT }}
+      JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+      JIRA_URL: ${{ secrets.JIRA_URL }}
+      MEND_API_KEY: ${{ secrets.MEND_API_KEY }} 
+      MEND_API_URL: ${{ secrets.MEND_API_URL }} 
+      MEND_URL: ${{ secrets.MEND_URL }}
+      MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}
+      
+      
+    
