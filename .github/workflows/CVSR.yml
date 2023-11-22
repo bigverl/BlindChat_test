@@ -21,4 +21,3 @@ jobs:
       MEND_API_URL: ${{ secrets.MEND_API_URL }} 
       MEND_URL: ${{ secrets.MEND_URL }}
       MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}     
-
