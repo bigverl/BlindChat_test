@@ -12,7 +12,7 @@ jobs:
     uses: 'bigverl/workflows/.github/workflows/CVSR_driver.yml@main'
     with:
       MEND_PRODUCT_NAME: BlindChat
-      JIRA_PROJECT_NAME: BLD #NOTE: Do not forget to check this against jira.cpsc.com
+      JIRA_PROJECT_NAME: BLD
     secrets:
       GHA_PAT: ${{ secrets.GHA_PAT }}
       JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
@@ -21,3 +21,4 @@ jobs:
       MEND_API_URL: ${{ secrets.MEND_API_URL }} 
       MEND_URL: ${{ secrets.MEND_URL }}
       MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}     
+
